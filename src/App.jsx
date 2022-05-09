@@ -1,37 +1,26 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './App.css';
+import useKey from './components/Keypress';
 
 function App() {
   const [count, setCount] = useState(0);
 
   const increment = () => {
-    setCount(count + 1)
+    setCount(prev => prev + 1)
   }
 
   const decrement = () => {
-    setCount(count - 1)
+    setCount(prev => prev - 1)
   }
 
-  useEffect(() => {
-    const onESC = (ev: KeyboardEvent) => {
-      if (ev.key === "Escape") {
-        closeModal();
-      }
-    };
-    window.addEventListener("keyup", onESC, false);
-    return () => {
-      window.addEventListener("keyup", onESC, false);
-    };
-  }, []);
+  useKey('ArrowUp', increment)
+  useKey('ArrowDown', decrement)
 
   return (
-    <div className="App" onKeyPress={(e) => handler(e)}>fd
+    <div className="App" >
       <button onClick={increment} >+</button>
       <span>{count}</span>
       <button onClick={decrement} >-</button>
-
-
-
     </div>
   );
 }
