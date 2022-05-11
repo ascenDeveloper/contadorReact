@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
+import Button from './components/Button';
 import useKey from './components/Keypress';
+import styled from 'styled-components';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,12 +19,31 @@ function App() {
   useKey('ArrowDown', decrement)
 
   return (
-    <div className="App" >
-      <button onClick={increment} >+</button>
+    <Container>
       <span>{count}</span>
-      <button onClick={decrement} >-</button>
-    </div>
+      <div className="buttons">
+        <Button value='+' cb={increment}></Button>
+        <Button value='-' cb={decrement}></Button>
+      </div>
+    </Container>
   );
 }
 
 export default App;
+
+const Container = styled.div`
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  .buttons {
+    display: flex;
+    justify-content:center;
+    margin: 10px;
+    padding: 10px;
+    
+  }
+`
