@@ -15,7 +15,12 @@ export default Button
 
 const Container = styled.div`
     button{
-        width: 10vw;
+        width: 12vw;
+        height: 3vh;
         margin: 10px;
+        border: none;
+        &:hover {
+            background-color: white
+        }
     }
 `
