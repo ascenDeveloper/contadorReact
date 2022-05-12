@@ -53,8 +53,14 @@ const Container = styled.div`
     width: 50%;
     height: 50%;
     background: rgb(65,216,221);
-    background: linear-gradient(150deg, #41d8ddbf 0%, #5583ee8f 100%);
-    box-shadow: 0px 0px 15px 4px #333 inset;
+    background: linear-gradient(150deg, #41d8dd 0%, #5583ee 100%);
+    box-shadow: 0px 0px 7px 4px #3333339a inset;
+    
+    &:hover {
+      box-shadow: 0px 0px 20px 5px #ffffff6c inset;
+    }
+    transition: box-shadow 0.2s linear 0.1s;
+    
     .buttons {
       display: flex;
       justify-content:center;

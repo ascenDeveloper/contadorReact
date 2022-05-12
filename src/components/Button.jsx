@@ -19,8 +19,14 @@ const Container = styled.div`
         height: 3vh;
         margin: 10px;
         border: none;
+        font-size: medium;
+        font-weight: bold;
+        color: white;
+        background-color: #242424;
+        cursor: pointer;
         &:hover {
-            background-color: white
+            background-color: white;
+            color: #242424;
         }
     }
 `
