@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/contadorReact/static/css/main.9bd83c4a.css",
+    "main.js": "/contadorReact/static/js/main.442d41ea.js",
+    "static/js/787.8b246723.chunk.js": "/contadorReact/static/js/787.8b246723.chunk.js",
+    "index.html": "/contadorReact/index.html",
+    "main.9bd83c4a.css.map": "/contadorReact/static/css/main.9bd83c4a.css.map",
+    "main.442d41ea.js.map": "/contadorReact/static/js/main.442d41ea.js.map",
+    "787.8b246723.chunk.js.map": "/contadorReact/static/js/787.8b246723.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bd83c4a.css",
+    "static/js/main.442d41ea.js"
+  ]
+}
